@@ -7,6 +7,7 @@ import { BrowserRouter,Route ,Routes} from 'react-router-dom';
 import Data from './components/Data';
 import Food from './components/Food';
 import Header from './components/Header';
+import Home from './components/Home';
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
     <Header/>
     <div>
       <Routes >
-      {/* <Route path="/" element={<Data />} exact/> */}
+      <Route path="/" element={<Home />} exact/>
       <Route path="/food" element={<Food />} exact/>
       
       </Routes>

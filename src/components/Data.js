@@ -15,7 +15,7 @@ const Data = () => {
   const {recipes}=FoodState();
  
     return (
-        <div className="App">
+        <div className="collection">
      
      {recipes.map(recipe=>(
        <Recipe key={recipe.recipe.label} ingredients={recipe.recipe.ingredients} Title={recipe.recipe.label} calories={recipe.recipe.calories} image={recipe.recipe.image} />
